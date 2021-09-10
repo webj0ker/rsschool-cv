@@ -1,0 +1,27 @@
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header a {
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(250, 251, 252);
+    height: 80px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.logo {
+    height: 20px;
+    padding: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+}
