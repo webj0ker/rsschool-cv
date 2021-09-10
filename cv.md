@@ -1,7 +1,7 @@
 # [rsschool-cv](https://webj0ker.github.io/rsschool-cv/)
 ---
-# Stanislav webj0ker 
-![Stanislav webj0ker](https://avatars0.githubusercontent.com/u/24877894?s=460&v=4)
+# Stanislav Shendryk 
+![Stanislav Shendryk](https://avatars0.githubusercontent.com/u/24877894?s=460&v=4)
 ## Contact info
 - Phone: +38 (099) 160 90 85
 - Email: <stanislav.shendryk@gmail.com>
