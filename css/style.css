@@ -1,19 +1,16 @@
-/* * {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 16px;
-} */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    background-image: url(../assets/images/bg.webp);
-    font-family: 'Open Sans', Arial, sans-serif;
+    background-image: url(../assets/images/bg.jpg);
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 16px;
 }
 
-
-/* .wrapper {
-    width: 1000px;
-    margin: 0 auto;
-} */
+a {
+    text-decoration: underline;
+}
 
 header a {
     text-align: right;
@@ -27,11 +24,6 @@ header a {
     text-decoration: none;
 }
 
-.sidebar {
-    /* background-color: #3d4e5f; */
-    /* height: 100vh; */
-}
-
 .sidebar ul {
     padding-bottom: 20px;
 }
@@ -40,6 +32,11 @@ header a {
     width: 100%;
     border-radius: 50%;
     margin-top: 20px;
+}
+
+.work-lists {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .asside-wrapper {
@@ -63,16 +60,20 @@ header a {
     padding-left: 10px;
 }
 
+.contact {
+    padding-left: 10px;
+}
+
 .contact-info {
     color: #fff;
 }
 
 .contact-lists {
     padding-left: 0;
+    list-style-type: none;
 }
 
 .contact-lists li {
-    list-style-type: none;
     padding-bottom: 10px;
 }
 
@@ -82,7 +83,29 @@ header a {
 }
 
 .contact-lists li a {
-    color: #fff
+    color: #fff;
+}
+
+.skills-lists {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.work-lists {
+    padding-left: 10px;
+}
+
+.work-lists h4 {
+    padding-left: 10px;
+}
+
+.work-lists p {
+    font-size: 15px;
+}
+
+.work-lists img {
+    max-width: 250px;
+    padding: 5px;
 }
 
 footer {
@@ -110,5 +133,5 @@ footer p {
 }
 
 .language-JS {
-    font-family: 'Anonymous Pro', monospace;
+    font-family: "Anonymous Pro", monospace;
 }
