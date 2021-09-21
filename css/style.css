@@ -92,12 +92,17 @@ header a {
 }
 
 .work-lists {
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
-.work-lists h4 {
-    padding-left: 10px;
+.work-lists div {
+    padding-left: 5px;
 }
+
+
+/* .work-lists h4 {
+    padding-left: 10px;
+} */
 
 .work-lists p {
     font-size: 15px;
