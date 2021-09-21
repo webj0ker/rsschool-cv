@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stanislav Shendryk</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/agate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span
+							class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <a class="navbar-brand" href="#">Stasnislav Shendryk</a>
+                </div>
+                <div class="collapse navbar-collapse" id="defaultNavbar1">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#summary">Summary</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#code-examples">Code examples</a></li>
+                        <li><a href="#experience">Portfolio</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#languages">Languages</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <aside class="col-xs-12 col-sm-12 col-md-3 text-justify sidebar">
+
+            <div class="asside-wrapper">
+                <figure>
+                    <img src="https://avatars0.githubusercontent.com/u/24877894?s=460&amp;v=4" alt="Photo Stanislav Shendryk">
+                </figure>
+                <section class="contact">
+                    <h2 class="contact-info">Contact info</h2>
+
+                    <ul class="contact-lists">
+                        <li>
+                            <h4>Phone:</h4><a href="tel:+380991609085">+38 (099) 160 90 85</a>
+                        </li>
+                        <li>
+                            <h4>Email:</h4><a href="mailto:stanislav.shendryk@gmail.com">stanislav.shendryk@gmail.com</a>
+                        </li>
+                        <li>
+                            <h4>Telegram:</h4><a href="https://t.me/webjoker">webJoker</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+        </aside>
+        <main class="col-xs-12 col-sm-12 col-md-9 text-justify content">
+            <h1>Stanislav Shendryk - Junior developer</h1>
+            <section>
+                <h2 id="summary">Summary</h2>
+                <p>I want to fully devote myself to developing Front-end and improve it. I have a great desire to work and study in this area. Start my career as a junior software engineer.</p>
+            </section>
+            <section>
+                <h2 id="skills">Skills</h2>
+
+
+                <ul class="skills-lists">
+                    <li>
+                        <h3>HTML</h3>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>CSS</h3>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Java Script</h3>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Figma</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Photoshop</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Coral</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+            </section>
+            <section>
+                <h2 id="code-examples">Code examples</h2>
+                <pre class="code"><code class="language-JS">
+const btnFullScreen = document.querySelector('.fullscreen');
+const inputs = document.querySelectorAll('.filters input');
+const fileInput = document.querySelector('input[type="file"]');
+const imageContainer = document.querySelector('.image-container');
+const image = document.querySelector('.image-container img');
+const download = document.querySelector('.btn-save');
+const reset = document.querySelector('.btn-reset');
+const body = document.querySelector('body');
+const next = document.querySelector('.btn-next');
+image.setAttribute("crossOrigin", "anonymous");
+
+function fullScreen() {
+    if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+    } else {
+    if (document.fullscreenElement) {
+        document.exitFullscreen();
+    }
+    }
+}
+
+fileInput.addEventListener('change', function (e) {
+    const file = fileInput.files[0];
+    const reader = new FileReader();
+    reader.onload = () => {
+    const img = new Image();
+    img.src = reader.result;
+    img.alt = 'image';
+    imageContainer.innerHTML = "";
+    imageContainer.append(img);
+    }
+    reader.readAsDataURL(file);
+});
+
+function handleUpdate() {
+    const suffix = this.dataset.sizing;
+    document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    this.nextElementSibling.value = this.value;
+}
+
+function savePicture() {
+    const canvas = document.createElement('canvas');
+    const img = document.querySelector('img');
+    img.setAttribute("crossOrigin", "anonymous");
+    canvas.width = img.naturalWidth;
+    canvas.height = img.naturalHeight;
+    const ctx = canvas.getContext("2d");
+    const imgStyles = getComputedStyle(img);
+    ctx.filter = imgStyles.filter;
+    ctx.drawImage(img, 0, 0);
+    const link = document.createElement('a');
+    link.download = 'download.png';
+    link.href = canvas.toDataURL();
+    link.click();
+    link.delete;
+}
+
+
+function makeCounter() {
+    let currentCount = 0;
+    return function() { 
+    if (currentCount === 20) {
+        return currentCount = 0
+    } else {
+        return currentCount++;
+    }
+    };
+}
+
+let count = makeCounter();
+
+function nextPicture () {
+
+    let arrImg = ['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20'];
+    image.src = `https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${getImageDate()}/${arrImg[count()]}.jpg`;
+}
+
+reset.addEventListener('click', e => {
+    inputs.forEach(element => {
+    const suffix = element.dataset.sizing;
+    if (element.name === 'saturate') {
+        element.value = 100;
+        element.nextElementSibling.value = 100;
+        document.documentElement.style.setProperty(`--${element.name}`, element.value + suffix);
+    } else {
+        element.value = 0;
+        element.nextElementSibling.value = 0;
+        document.documentElement.style.setProperty(`--${element.name}`, element.value + suffix);
+    }
+    });
+});
+
+btnFullScreen.addEventListener('mousedown', fullScreen);
+inputs.forEach(input => input.addEventListener('change', handleUpdate));
+inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+next.addEventListener('mousedown', nextPicture)
+download.addEventListener('click', savePicture);
+  </code></pre>
+            </section>
+
+            <section>
+
+                <h2 id="experience">Portfolio</h2>
+
+                <ul class="work-lists row">
+                    <li class="work-lists col-lg-4 col-md-6 col-sm-12">
+                        <a target="_blank" href="https://rolling-scopes-school.github.io/shendryk-JSFE2021Q1/online-zoo/index.html">
+                            <img src="assets/images/screenshot1.jpg" alt="Online zoo"></a>
+                        <div>
+                            <h4>Online zoo</h4>
+                            <p>Live video with animals in vivo</p>
+                            <p>Technologies:HTML, SASS, JS, GIT</p>
+                        </div>
+
+                    </li>
+                    <li class="work-lists col-lg-4 col-md-6 col-sm-12">
+                        <a target="_blank" href="https://rolling-scopes-school.github.io/shendryk-JSFE2021Q1/photo-filter/"><img src="assets/images/screenshot2.jpg" alt="Photo-filter"></a>
+                        <div>
+                            <h4>SPA Photo-filter</h4>
+                            <p>Different filters for photos</p>
+                            <p>Technologies:SASS, JS, GIT, Webpack</p>
+                        </div>
+
+                    </li>
+                    <li class="work-lists col-lg-4 col-md-6 col-sm-12">
+                        <a target="_blank" href="https://rolling-scopes-school.github.io/shendryk-JSFE2021Q1/match-match-game/"><img src="assets/images/screenshot3.jpg" alt="Match-match game"></a>
+                        <div>
+                            <h4>SPA Match-match game</h4>
+                            <p>Game to improve memorization</p>
+                            <p>Technologies:SASS, TS, GIT, Webpack</p>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </section>
+            <section>
+                <h2 id="education">Education</h2>
+                <ul>
+                    <li>National Technical University «Kharkiv Polytechnic Institute» <br>Faculty of Computer and Information Technologies (CIT) <br>Specialty "Computer Engineering"</li>
+                    <li>Htmlacademy</li>
+                    <li>EPAM</li>
+                    <li>Rolling scopes school</li>
+                </ul>
+
+                <h2 id="languages">Languages</h2>
+                <ul>
+                    <li>English - A2</li>
+                    <li>Ukraine - С1</li>
+                    <li>Russian - С1</li>
+                </ul>
+            </section>
+
+        </main>
+
+
+        <footer class="footer">
+            <!-- <div class="container"> -->
+            <!-- <div class="row"> -->
+            <div class="text-center">
+                <div class="footer-wrapper">
+                    <a href="https://rs.school/js/" target="_blank">
+                        <img class="logo rsschool" src="https://rs.school/images/rs_school_js.svg" alt="logo rsschool">
+                    </a>
+                    <a href="https://github.com/webj0ker/" target="_blank">
+                        <img class="logo github" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="logo github"></a>
+                    <p>2021 &copy; Stanislav Shendryk</p>
+
+                </div>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</body>
+
+</html>
